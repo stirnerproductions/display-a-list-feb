@@ -3,23 +3,39 @@ import { renderSayingsList } from './render-strings.js';
 import { sayingsList } from './array-sayings.js';
 import { renderMarioGames } from './render-games.js';
 import { gamesList } from './array-games.js';
+import { renderMovies } from './render-movies.js';
+import { moviesList } from './array-movies.js';
+
 
 
 const firstList = document.querySelector('.first-list');
 // initialize global state
 
 
-const aList = renderSayingsList(sayingsList);
+//const aList = renderSayingsList(sayingsList);
 
-firstList.append(aList);
+for (let saying of sayingsList) {
+    const aSaying = renderSayingsList(saying);
+
+    firstList.append(aSaying);
+}
 
 
 // initialize global state
 
+const gameList = document.querySelector('.game-list');
 
-const games = renderMarioGames(gamesList);
+for (let game of gamesList) {
+    const aGame = renderMarioGames(game);
 
-firstList.append(games);
+    gameList.append(aGame);
+}
+
+//firstList.append(games);
+
+const movies = renderMovies(moviesList);
+
+firstList.append(movies);
 
 
 // set event listeners 

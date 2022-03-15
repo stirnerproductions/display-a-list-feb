@@ -1,14 +1,8 @@
-export function renderSayingsList(sayings) {
+export function renderSayingsList(saying) {
 
-    const listEl = document.createElement('div');
+    const listEl = document.createElement('p');
 
-    for (let saying of sayings) {
-        const aSaying = document.createElement('p');
-
-        aSaying.textContent = saying;
-
-        listEl.append(aSaying);
-    }
+    listEl.textContent = saying;
 
     return listEl;
 

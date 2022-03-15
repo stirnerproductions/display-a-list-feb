@@ -1,4 +1,4 @@
-export const gamesList = [
+export const moviesList = [
     { movie: 'Blade Runner',
         director: 'Ridley Scott',
         cast: { actor1: 'Harrison Ford',
