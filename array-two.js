@@ -1,0 +1,17 @@
+export const gamesList = [
+    { name: 'Super Mario Brothers',
+        director: 'Shigeru Miyamoto',
+        composer: 'Koji Kondo',
+        year: '1985' },
+    { name: 'Super Mario Brothers 2',
+        director: 'Kensuke Tanabe',
+        composer: 'Koji Kondo',
+        year: '1988' },
+    { name: 'Super Mario Brothers 3',
+        director: 'Shigeru Miyamoto, Takashi Tezuka',
+        composer: 'Koji Kondo', 
+        year: '1990' },
+    { name: 'Super Mario World',
+        director: 'Takashi Tezuka',
+        composer: 'Koji Kondo',
+        year: '1991' }];
