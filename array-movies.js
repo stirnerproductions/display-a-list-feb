@@ -1,0 +1,16 @@
+export const moviesList = [
+    { movie: 'Blade Runner',
+        director: 'Ridley Scott',
+        cast: { actor1: 'Harrison Ford',
+            actor2: 'Rutger Hauer',
+            actor3: 'Sean Young' } },
+    { movie: 'Jurassic Park',
+        director: 'Steven Spielberg',
+        cast: { actor1: 'Sam Niell',
+            actor2: 'Laura Dern',
+            actor3: 'Jeff Goldblum' } },
+    { movie: 'Alien',
+        director: 'Ridley Scott',
+        cast: { actor1: 'Tom Skerritt',
+            actor2: 'Sigourney Weaver',
+            actor3: 'Ian Holm' } }];
