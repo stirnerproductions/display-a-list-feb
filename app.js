@@ -5,6 +5,8 @@ import { renderMarioGames } from './render-games.js';
 import { gamesList } from './array-games.js';
 import { renderMovies } from './render-movies.js';
 import { moviesList } from './array-movies.js';
+import { renderAlbums } from './render-albums.js';
+import { albumsList } from './array-albums.js';
 
 
 
@@ -41,10 +43,11 @@ for (let movie of moviesList) {
     movieContainer.append(aMovie);
 }
 
-//firstList.append(movies);
+const albumContainer = document.querySelector('.album-list');
 
+for (let album of albumsList) {
+    const anAlbum = renderAlbums(album);
 
-// set event listeners 
-  // get user input
-  // use user input to update state 
-  // update DOM to reflect the new state
+    albumContainer.append(anAlbum);
+}
+
