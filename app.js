@@ -23,19 +23,25 @@ for (let saying of sayingsList) {
 
 // initialize global state
 
-const gameList = document.querySelector('.game-list');
+const gameContainer = document.querySelector('.game-list');
 
 for (let game of gamesList) {
     const aGame = renderMarioGames(game);
 
-    gameList.append(aGame);
+    gameContainer.append(aGame);
 }
 
 //firstList.append(games);
 
-const movies = renderMovies(moviesList);
+const movieContainer = document.querySelector('.movie-list');
 
-firstList.append(movies);
+for (let movie of moviesList) {
+    const aMovie = renderMovies(movie);
+
+    movieContainer.append(aMovie);
+}
+
+//firstList.append(movies);
 
 
 // set event listeners 

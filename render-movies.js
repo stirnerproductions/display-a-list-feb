@@ -1,34 +1,26 @@
-export function renderMovies(movies) {
+export function renderMovies(movie) {
 
     const movieEl = document.createElement('section');
 
-    movieEl.classList.add('movie-list');
+   
+    movieEl.classList.add('movies-list');
 
-    for (let movie of movies) {
-        const movieContainer = document.createElement('div');
-        movieContainer.classList.add('movie-card');
-
-        const movieTitle = document.createElement('h3');
-        const movieImage = document.createElement('img');
-        const movieDirector = document.createElement('p');
-        const movieCast = document.createElement('p');
-        const gameYear = document.createElement('p');
+    const movieTitle = document.createElement('h3');
+    const movieImage = document.createElement('img');
+    const movieDirector = document.createElement('p');
+    const movieCast = document.createElement('p');
         
 
-        movieTitle.textContent = movie.movie;
-        movieImage.src = `./assets/${movie.movie}.JPG`;
-        movieDirector.textContent = `Director: ${movie.director}`;
-        movieCast.textContent = `Cast: ${movie.cast.actor1}, ${movie.cast.actor2}, ${movie.cast.actor3} `;
+    movieTitle.textContent = movie.movie;
+    movieImage.src = `./assets/${movie.movie}.JPG`;
+    movieDirector.textContent = `Director: ${movie.director}`;
+    movieCast.textContent = `Cast: ${movie.cast.actor1}, ${movie.cast.actor2}, ${movie.cast.actor3} `;
     
 
-        movieContainer.append(movieTitle);
-        movieContainer.append(movieImage);
-        movieContainer.append(movieDirector);
-        movieContainer.append(movieCast);
-        
-
-        movieEl.append(movieContainer);
-    }
+    movieEl.append(movieTitle);
+    movieEl.append(movieImage);
+    movieEl.append(movieDirector);
+    movieEl.append(movieCast);
 
     return movieEl;
 

@@ -134,3 +134,27 @@ footer {
       
       
   }
+
+  .game-list {
+      display: flex;
+      flex-direction: row;
+  }
+
+  .movies-list > img {
+    width: 250px;
+    
+    
+    
+}
+
+.movies-list {
+    box-shadow: 5px 5px 15px -2px rgba(0,0,0,0.63);
+    width: 325px;
+    padding: 10px;
+}
+
+.movie-list {
+    display: flex;
+    flex-direction: row;
+}
+
