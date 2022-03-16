@@ -78,10 +78,6 @@ header img {
     height: var(--header-height);
 }
 
-p {
-    
-}
-  
 footer {
     position: fixed;
     width: 100%;
